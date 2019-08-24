@@ -28,7 +28,6 @@
         text-decoration: underline;
       }
       .mainvisual img {
-        width: 100%;
         display: block;
       }
       .basic {
@@ -71,6 +70,13 @@
           width: 80vw;
           height: 120vw;
         }
+        .main01 img { height: calc(100vw * 1696 / 1200); }
+        .main02 img { height: calc(100vw * 1696 / 1200); }
+        .main03 img { height: calc(100vw * 339 / 1200); }
+        .main04 img { height: calc(100vw * 848 / 1200); }
+        .blank img { height: calc(100vw * 848 / 1200); }
+        .blank_half img { height: calc(100vw * 424 / 1200); }
+        .blank_quarter img { height: calc(100vw * 254 / 1200); }
       }
       @media screen and (min-width: 600px) {
         body p {
@@ -89,6 +95,13 @@
           width: 50vw;
           height: 60vw;
         }
+        .main01 img { height: calc(100vw * 1696 / 2765); }
+        .main02 img { height: calc(100vw * 1696 / 2765); }
+        .main03 img { height: calc(100vw * 339 / 2765); }
+        .main04 img { height: calc(100vw * 848 / 2765); }
+        .blank img { height: calc(100vw * 848 / 2765); }
+        .blank_half img { height: calc(100vw * 424 / 2765); }
+        .blank_quarter img { height: calc(100vw * 254 / 2765); }
       }
     </style>
     <link rel="icon" href="images/favicon.ico">
@@ -107,36 +120,36 @@
   </head>
   <body>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual main01">
         <source media="(min-width: 600px)" srcset="images/main01.png">
         <img src="images/main01_s.png" alt="">
       </picture>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual main02">
         <source media="(min-width: 600px)" srcset="images/main02.png">
         <img src="images/main02_s.png" alt="">
       </picture>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual blank_quarter">
         <source media="(min-width: 600px)" srcset="images/blank_quarter.png">
         <img src="images/blank_quarter_s.png" alt="">
       </picture>
       <p class="over">2019年 iOS/Android配信予定</p>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual main03">
         <source media="(min-width: 600px)" srcset="images/main03.png">
         <img src="images/main03_s.png" alt="">
       </picture>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual blank">
         <source media="(min-width: 600px)" srcset="images/blank.png">
         <img src="images/blank_s.png" alt="">
       </picture>
-      <picture class="mainvisual">
+      <picture class="mainvisual blank">
         <source media="(min-width: 600px)" srcset="images/blank.png">
         <img src="images/blank_s.png" alt="">
       </picture>
@@ -147,19 +160,19 @@
       </div>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual main04">
         <source media="(min-width: 600px)" srcset="images/main04.png">
         <img src="images/main04_s.png" alt="">
       </picture>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual blank_quarter">
         <source media="(min-width: 600px)" srcset="images/blank_quarter.png">
         <img src="images/blank_quarter_s.png" alt="">
       </picture>
     </div>
     <div class="basic">
-      <picture class="mainvisual">
+      <picture class="mainvisual blank">
         <source media="(min-width: 600px)" srcset="images/blank_none.png">
         <img src="images/blank_none_s.png" alt="">
       </picture>
