@@ -18,7 +18,7 @@
         font-family: 'Noto Sans JP', sans-serif;
         padding: 0;
         margin: 0;
-        width: 100%;
+        text-align: center;
       }
       body a {
         color: #17a2ff;
@@ -27,68 +27,62 @@
       body a:hover {
         text-decoration: underline;
       }
-      @media screen and (min-width: 0px) {
-        h3 {
-          font-size: 4vw;
-        }
-        p {
-          font-size: 2.5vw;
-        }
-        .mainvisual img {
-          width: 100%;
-        }
-        .info {
-          width: 100%;
-          height: 0px;
-          text-align: center;
-          position: relative;
-          bottom: 25vw;
-        }
-        .footer {
-          width: 100%;
-          text-align: center;
-          margin: 0 0 9vw;
-        }
-        .footer .teamlogo {
-          width: 20vw;
-        }
-        .footer a {
-          margin: 0.3vw;
-        }
+      .mainvisual img {
+        width: 100%;
       }
-      @media screen and (min-width: 600px) {
-        h3 {
-          font-size: 24px;
-        }
-        p {
-          font-size: 15px;
-        }
-        .mainvisual img {
-          width: 100%;
-          min-height: 1800px;
-          object-fit: cover;
-          object-position: 50% 0%;
-        }
-        .info {
-          width: 100%;
-          height: 0px;
-          text-align: center;
-          position: relative;
-          bottom: 150px;
-        }
-        .info iframe {
-          margin: 0 2px;
-        }
-        .footer {
-          width: 100%;
-          text-align: center;
-          margin: 0 0 54px;
+      .basic {
+        position: relative;
+      }
+      .basic .top {
+        width: 100%;
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 0;
+        padding: 0;
+      }
+      .basic .over {
+        width: 100%;
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0;
+      }
+      @media screen and (min-width: 0px) {
+        body p {
+          font-size: 16px;
         }
         .footer .teamlogo {
+          padding-top: 10px;
           width: 120px;
         }
         .footer a {
           margin: 2px;
+        }
+        .twitter {
+          width: 80vw;
+          height: 120vw;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        body p {
+          font-size: 1.5vw;
+        }
+        .footer .teamlogo {
+          padding-top: 1vw;
+          width: 15vw;
+        }
+        .footer a {
+          margin: 0.2vw;
+        }
+        .twitter {
+          width: 50vw;
+          height: 60vw;
         }
       }
     </style>
@@ -107,30 +101,73 @@
     <title>ロケットパズル(RocketPuzzle) - 29Games</title>
   </head>
   <body>
-    <div class="mainvisual">
-      <picture>
-        <source media="(min-width: 600px)" srcset="images/mainvisual.png">
-        <img src="images/mainvisual2.png" alt="">
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/main01.png">
+        <img src="images/main01_s.png" alt="">
       </picture>
     </div>
-    <div class="info">
-      <h3>2019年 iOS/Android配信予定</h3>
-      <p>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ロケットパズル 2019年配信予定" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <a href="https://twitter.com/29GamesOfficial?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @29GamesOfficial</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </p>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/main02.png">
+        <img src="images/main02_s.png" alt="">
+      </picture>
     </div>
-    <div class="footer">
-      <p>
-        <a href="../"><img class="teamlogo" src="../images/29games_white.png" alt="29Games"></a>
-      </p>
-      <p>
-        Official: <a href="https://twitter.com/29GamesOfficial" target="_blank">@29GamesOfficial</a>
-        <br>
-        Members:
-        <a href="https://twitter.com/R_Nikaido" target="_blank">@R_Nikaido</a>
-        <a href="https://twitter.com/kyubuns" target="_blank">@kyubuns</a>
-      </p>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/blank_quarter.png">
+        <img src="images/blank_quarter_s.png" alt="">
+      </picture>
+      <p class="over">2019年 iOS/Android配信予定</p>
+    </div>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/main03.png">
+        <img src="images/main03_s.png" alt="">
+      </picture>
+    </div>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/blank.png">
+        <img src="images/blank_s.png" alt="">
+      </picture>
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/blank.png">
+        <img src="images/blank_s.png" alt="">
+      </picture>
+      <div class="over twitter">
+        <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="dark" href="https://twitter.com/29GamesOfficial?ref_src=twsrc%5Etfw">Tweets by 29GamesOfficial</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/main04.png">
+        <img src="images/main04_s.png" alt="">
+      </picture>
+    </div>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/blank_quarter.png">
+        <img src="images/blank_quarter_s.png" alt="">
+      </picture>
+    </div>
+    <div class="basic">
+      <picture class="mainvisual">
+        <source media="(min-width: 600px)" srcset="images/blank_none.png">
+        <img src="images/blank_none_s.png" alt="">
+      </picture>
+      <div class="top footer">
+        <p>
+          <a href="../"><img class="teamlogo" src="../images/29games_white.png" alt="29Games"></a>
+        </p>
+        <p>
+          Official: <a href="https://twitter.com/29GamesOfficial" target="_blank">@29GamesOfficial</a>
+          <br>
+          Members:
+          <a href="https://twitter.com/R_Nikaido" target="_blank">@R_Nikaido</a>
+          <a href="https://twitter.com/kyubuns" target="_blank">@kyubuns</a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
